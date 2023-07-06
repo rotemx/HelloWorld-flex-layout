@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS 2</title>
+		
+		<link rel="stylesheet" href="css2.css" type="text/css">
+		<style>
+			p
+			{
+				background : blue !important;
+			}
+			p
+			{
+				background : red !important;
+			}
+
+			/* Blue color is applied */
+			div
+			{
+				background : darkblue;
+			}
+
+			*
+			{
+				font-size : 50px;
+			}
+
+			div
+			{
+			}
+
+			h1
+			{
+			}
+
+			body
+			{
+			}
+
+			.parent
+			{
+			}
+
+			/*BOTH A DIV AND .PARENT*/
+			div.parent
+			{
+				color : blue;
+			}
+
+			/* A .PARENT WHO IS A DESCENDENT OF  DIV */
+			div .parent
+			{
+
+			}
+
+			/*A .PARENT WHO IS A DIRECT CHILD OF DIV*/
+			div > .parent
+			{
+
+			}
+
+			/* All direct children of any DIV */
+			div > *
+			{
+				border     : 2px solid green;
+				background : lightgoldenrodyellow;;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		
+		<h1>CSS 2 Class</h1>
+		<span class="parent" id="mySpan">
+			This is the parent SPAN
+			
+		</span>
+		
+		<div class="parent" style="">
+			Hello, this is the parent DIV. I want to be blue!
+			<span>I am a direct child</span>
+		</div>
+		
+		
+		<div>
+			This is another DIV
+		</div>
+		
+		<p>
+			This is a paragraph
+		</p>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS 4</title>
+		<script>
+			document.getElementById("myDiv")
+		</script>
+		
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<style>
+			body
+			{
+				color: darkslateblue;
+
+				font-size : 100px;
+			}
+
+			div
+			{
+				/*background: red;*/
+				padding       : 20px;
+				border-radius : 10px;
+				text-align    : center;
+			}
+			
+			.specialFont {
+				border: 4px dashed darkslateblue ;
+				padding: 200px;
+				font-family: 'Just Another Hand', cursive;
+			}
+			.specialFont > div {
+				background: lightgoldenrodyellow;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="specialFont">
+			This is the "Just Another Hand" font.
+			<div>
+				This is the DIV inside specialFont.
+			</div>
+		</div>
+		
+		This is the regular font.
+		
+		<div id="myDiv" style="" class="divClass">
+			<div id="insideDIV">
+				I am a DIV inside a DIV
+			</div>
+		</div>
+		
+		<div>
+			I am anoher div
+		</div>
+	</body>
+	<script>
+		document.getElementById("myDiv")
+	</script>
+
+</html>

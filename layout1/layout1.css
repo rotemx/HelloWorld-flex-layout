@@ -1,0 +1,62 @@
+header {
+
+}
+
+nav{}
+aside{}
+main{
+    border: 4px solid deeppink;
+    background: black;
+    display: inline-block;
+    width: calc(60% - 4px);
+    /* overflow: hidden; */
+}
+footer{
+    background: green;
+    /* border-radius: 20px; */
+}
+
+
+body {
+    border: 4px solid green;
+    margin: 0;
+}
+
+body {}
+
+header {
+    border: 4px solid purple;
+    height: 60px;
+}
+
+header, main, aside, nav, footer {
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+aside {
+    border: 4px solid blue;
+    width: 40%;
+    background: aliceblue;
+    min-width: 250px;
+    display: inline-block;
+    /* position: relative; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: aquamarine;
+    height: 9000px;
+}
+
+body, html {
+    height: 100%;
+}
+
+aside, main {
+    height: 100%;
+}

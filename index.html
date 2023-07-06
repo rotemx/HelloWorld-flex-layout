@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+w	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<style>
+			label
+			{
+				display : block;
+				padding : 10px;
+			}
+
+			label > label
+			{
+				display : inline;
+			/*}*/
+			
+			.myCls
+			{
+				color: blueviolet;
+				background: saddlebrown;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<div class="myCls">
+			
+			
+			<ul>
+				<li>
+					CapitalCase - classnames
+				</li>
+				<li>
+					camelCase - variable names
+				</li>
+				<li>
+					snake_case - sometimes
+				</li>
+				<li>
+					dash-case - element names / file names
+				</li>
+			
+			</ul>
+			
+			<h2> My Form</h2>
+			
+			<form action="" method="get">
+				<label>
+					Name
+					<input placeholder="enter your name">
+				</label>
+				<label>
+					Birth Date
+					<input type="date" value="2020-04-01">
+				</label>
+				<label>
+					Tel
+					<input type="text" value="054725040">
+				</label>
+				<label>
+					Favorite Color
+					<input type="color" value="#ff0000">
+				</label>
+				<label>
+					Favorite Band
+					<select>
+						<optgroup label="Rock">
+							<option value="pinkfloyd">Pink Floyd</option>
+							<option value="acdc">ACDC</option>
+							<option value="gunsandroses">Guns & Roses</option>
+							<option value="arcticmonkeys">Arctic Monkeys</option>
+							<option value="linkinpark">Linkin Park</option>
+						</optgroup>
+						<optgroup label="Pop">
+							<option>Madonna</option>
+							<option selected>Micheal Jackson</option>
+							<option>Ke$ha</option>
+							<option>Robbie Williams</option>
+						</optgroup>
+					</select>
+				
+				</label>
+				<label>
+					Programming Languages
+					<br>
+					<input type="checkbox" id="js" name="JS" value="Bike">
+					<label for="js"> JavaScript</label><br>
+					<input type="checkbox" id="ts" name="ts" value="Car">
+					<label for="ts">TypeScript</label><br>
+					<input type="checkbox" id="html" name="html" value="Boat">
+					<label for="html">HTML</label><br>
+					<input type="checkbox" id="angular" name="angular" value="Car">
+					<label for="angular">Angular</label><br>
+					<input type="checkbox" id="VUE" name="vue" value="Boat">
+					<label for="vue">VUE</label><br>
+				</label>
+				<label>
+					Preferred Programming Language
+					<br>
+					<input type="radio" id="js2" name="fav_language" value="js2">
+					<label for="js2"> JavaScript</label><br>
+					<input type="radio" id="ts2" name="fav_language" value="ts">
+					<label for="ts2">TypeScript</label><br>
+					<input type="radio" id="html2" name="fav_language" value="html">
+					<label for="html2">HTML</label><br>
+					<input type="radio" id="angular2" name="fav_language" value="angular">
+					<label for="angular2">Angular</label><br>
+					<input type="radio" id="vue2" name="fav_language" value="vue">
+					<label for="vue2">VUE</label><br>
+				</label>
+				
+				<input type="submit" value="send">
+			</form>
+		
+		</div>
+	</body>
+</html>
