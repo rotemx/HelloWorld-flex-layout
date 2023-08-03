@@ -1,0 +1,123 @@
+html, body
+{
+	height         : 100%;
+	display        : flex;
+	width          : 100%;
+	flex-direction : column;
+	margin         : 0;
+}
+
+
+html
+{
+	/* border: 3px solid green; */
+	/* height: unset; */
+}
+
+body
+{
+	/* border: 3px solid purple; */
+	min-width: 700px;
+}
+
+header, footer
+{
+	height : 70px;
+	/* border: 12px solid #fc49b2; */
+}
+
+header
+{
+	background-color : cornflowerblue;
+}
+
+footer
+{
+	background : #666666;
+}
+
+.content
+{
+	flex     : 1;
+	overflow: hidden;
+	/* border: 13px solid red; */
+	display: flex;
+}
+
+aside, menu, main
+{
+	/* border: 2px solid forestgreen; */
+	flex: 1;
+	overflow: auto;
+}
+
+
+aside {
+    background: lightcoral;
+    min-width: 200px;
+    max-width: 200px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSic-awDWb7wUWb1LH3RJ0wstEkmvxUMz2_tg&usqp=CAU');
+    background-size: 90%;
+    background-repeat: repeat-y;
+    /* transform: rotatez(135deg); */
+}
+
+menu {
+    margin: 0;
+    background: lightgray;
+    flex: 1;
+    padding: 0;
+    /* background: lightcoral; */
+    min-width: 200px;
+    max-width: 200px;
+}
+
+article {
+    /* border: 2px solid purple; */
+    padding: 20px;
+}
+
+.circle {
+    background: #89b1e7;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tall-image {
+    height: 210px;
+    background: bisque;
+    width: 50px;
+    /* background-image: url('./assets/utter.jpg'); */
+    /* background-position-x: 340px; */
+    /* background-position-y: -420px; */
+    /* background-size: 230%; */
+    transition: width 2s, height 4s;
+}
+
+.row-container {display: flex;/* border: 2px solid green; */flex: 1;flex-direction: column;justify-content: space-between;padding: 5px 30px;}
+
+.headline {
+    background: aquamarine;
+    height: 40px;
+    /* width: 40px; */
+    border: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.headline:hover {
+    background: #4ed4a7;
+    box-shadow: none;
+}
+
+article.column-container {}
+
+aside:hover {
+    transform: rotatez(135deg);
+}
