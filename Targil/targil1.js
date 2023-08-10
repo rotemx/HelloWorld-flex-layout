@@ -1,11 +1,9 @@
 let userInputParsed;
-let userInputStr
+let userInputStr;
 do
 {
 	userInputStr = prompt('Enter a value:');
-	
 	userInputParsed = JSON.parse(userInputStr);
-	
 	const type = typeof userInputParsed;
 	
 	console.log('userInputParsed ', userInputParsed);
@@ -25,6 +23,7 @@ do
 		anyRuleApplied = true;
 		console.log("Yes");
 	}
+	
 	if (!userInputParsed)
 	{
 		anyRuleApplied = true;
