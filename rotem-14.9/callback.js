@@ -22,7 +22,7 @@ function runInTheFuture(fn1, fn2, num)
 console.log("before");
 runInTheFuture(
 	() => {
-		console.log('This this the future! FIRST FUNCTION');
+		console.log('FIRST FUNCTION: This this the future! ');
 		return Math.random()
 	},
 	(data) => {

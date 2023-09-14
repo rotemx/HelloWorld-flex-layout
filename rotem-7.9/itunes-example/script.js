@@ -6,7 +6,7 @@ const req        = new XMLHttpRequest();
 req.responseType = 'json';
 
 req.onreadystatechange = function () {
-	if (this.readyState == 4 && this.status == 200)
+	if (this.readyState === 4 && this.status === 200)
 	{
 		const {results} = this.response;
 		
