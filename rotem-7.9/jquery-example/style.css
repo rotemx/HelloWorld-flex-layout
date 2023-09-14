@@ -1,0 +1,13 @@
+.box {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+}
+.red
+{
+	background: red;
+}
+
+.half_transparent {
+	opacity: .5;
+}

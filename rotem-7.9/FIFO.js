@@ -1,0 +1,9 @@
+setTimeout(()=>{
+    console.log(1);
+},0)
+setTimeout(()=>{
+    console.log(2);
+},0)
+setTimeout(()=>{
+    console.log(3);
+},0)

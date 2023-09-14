@@ -35,7 +35,7 @@ function extractNamesAndAgesFromObjects(obj)
 	if (obj.children?.length)
 	{
 		result = [...result, ...obj.children?.map(child => extractNamesAndAgesFromObjects(child)).flat()];
-	}
+	// }
 	return result
 }
 
