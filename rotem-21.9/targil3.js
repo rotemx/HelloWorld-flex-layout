@@ -3,17 +3,18 @@ function getRandomNumber(min, max)
 	// Generate a random number between min (inclusive) and max (inclusive)
 	return Math.round(Math.random() * (max - min) + min);
 }
+let results = [];
 
 function numberToPromise(num)
 {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			console.log(num);
+			results.push(num)
 			resolve(num);
 		}, getRandomNumber(1, 5) * 1000)
 	})
 }
-
 Promise.all([
 	            numberToPromise(1),
 	            numberToPromise(2),
@@ -28,4 +29,7 @@ Promise.all([
             ])
        .then(values => {
 	       console.log("Done!");
+		   console.log('results:');
+		   console.log(results);
+		   console.log(`${results[0]} IS THE WINNER! `);
        })
