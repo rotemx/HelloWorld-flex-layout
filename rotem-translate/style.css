@@ -1,0 +1,13 @@
+
+
+.search-box {
+	height: 70px;
+}
+html, body  {
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex: 1;
+	justify-content: center;
+}

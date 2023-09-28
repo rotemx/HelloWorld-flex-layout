@@ -7,7 +7,7 @@ function returnPromiseOfANumber(num)
 returnPromiseOfANumber(88)
 	.then(value => {
 		console.log('value is: ' + value); //88
-	})
+	});
 	
 	// Async-Await syntax:
 	
@@ -26,8 +26,13 @@ returnPromiseOfANumber(88)
 
 // function invocation
 
-function wait()
+function wait(sec)
 {
+	return new Promise((resolve, reject) => {
+		setTimeout(()=>{
+		    resolve()
+		}, sec * 1000)
+	})
 	// write this function...
 }
 
