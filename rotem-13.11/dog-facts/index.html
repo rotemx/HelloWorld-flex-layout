@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+	<style>
+		#dogImgWrapper {
+		}
+		
+		.dog-img {
+			width: 300px;
+			height: 300px;
+			background-position: 0;
+			background-repeat: no-repeat no-repeat;
+			background-size: contain;
+
+		}
+	</style>
 	<script>
 		const URL = "https://dog.ceo/api/breeds/image/random";
 		
 		const onDomLoaded = async () => {
 			
-			const getDogBtn = document.getElementById("getDogBtn");
+			const
+				getDogBtn = document.getElementById("getDogBtn"),
+				dogImgWrapper = document.getElementById("dogImgWrapper");
 			
 			getDogBtn.addEventListener("click", async () => {
-				
 				const
 					response = await fetch(URL),
 					data     = await response.json();
 				
 				console.log(data);
+				dogImgWrapper.innerHTML = `
+				<div class="dog-img-holder">
+					<div class="dog-img" style="background-image: URL('${data.message}')"></div>
+				</div>
+				`;
+				
 			})
 			
 			
@@ -26,6 +46,7 @@
 		<title>Title</title>
 	</head>
 	<body>
+		<div id="dogImgWrapper"></div>
 		<input id="getDogBtn" type="button" value="get dog">
 	</body>
 </html>
